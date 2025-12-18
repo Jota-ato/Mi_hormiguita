@@ -6,7 +6,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export default function MySlider() {
-  // 1. Lista de nombres de archivos que están en tu carpeta public
   const photos = [
     "IMG-20250115-WA0001.jpg",
     "IMG-20250211-WA0005.jpg",
@@ -34,11 +33,10 @@ export default function MySlider() {
         autoplay={{ delay: 5000 }}
         className="h-full rounded-2xl shadow-xl"
       >
-        {/* 2. Recorremos el arreglo para crear un slide por cada foto */}
         {photos.map((photo, index) => (
           <SwiperSlide key={index}>
             <img 
-              src={`/${photo}`} // En Vite, los archivos en public se llaman desde la raíz '/'
+              src={`/${photo}`}
               alt={`Foto hormiguita ${index + 1}`} 
               className="w-full h-full object-cover"
             />

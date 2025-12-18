@@ -1,4 +1,6 @@
 import ComoMeSiento from "./components/ComoMeSiento";
+import Conclusion from "./components/Conclusion";
+import Contador from "./components/Contador";
 import Introduccion from "./components/Introduccion";
 import MySlider from "./components/Slider";
 
@@ -13,6 +15,10 @@ function App() {
             <div className="bg-surface p-8 rounded-xl">
                 <Introduccion />
                 <ComoMeSiento />
+            </div>
+            <Contador />
+            <div className="bg-surface p-8 rounded-xl">
+                <Conclusion />
             </div>
         </div>
     );
